@@ -4,7 +4,7 @@
 เขียนด้วย concept modular
 
 ### Files
- cmd -> main app
- package(pkg) -> external file ไฟล์ที่ใช้รวมกันจะอยู่ในนี้เช่น random number service
- src -> internal file จะทำงานเป็น module แยกขาดกันไม่ควร import ข้าม module จะทำให้ manage ยาก
- config -> จะเก็บจำพวก config ต่างๆ เช่น databas  cache
+ - cmd -> main app
+ - package(pkg) -> external file ไฟล์ที่ใช้รวมกันจะอยู่ในนี้เช่น random number service
+ - src -> internal file จะทำงานเป็น module แยกขาดกันไม่ควร import ข้าม module จะทำให้ manage ยาก
+ - config -> จะเก็บจำพวก config ต่างๆ เช่น databas  cache
