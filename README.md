@@ -3,6 +3,9 @@
 
 เขียนด้วย concept modular
 
+![Uploading image.png…]()
+
+
 ### Files
  - cmd -> main app
  - package(pkg) -> external file ไฟล์ที่ใช้รวมกันจะอยู่ในนี้เช่น random number service
