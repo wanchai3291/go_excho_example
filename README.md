@@ -1,2 +1,2 @@
-# go_excho_example
+# go_echo_example
 Golang using echo framework
