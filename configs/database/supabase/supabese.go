@@ -27,7 +27,6 @@ func Connect() *gorm.DB {
 	if e != nil {
 		log.Fatal(e)
 	}
-	// postgresql://postgres:AK6jBz00IsHAtOjJ@db.twanewqvwajdrspqxzxy.supabase.co:5432/postgres
 
 	return database
 }

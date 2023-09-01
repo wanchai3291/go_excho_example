@@ -7,5 +7,5 @@ import (
 )
 
 func InitAuthRoutes(e *echo.Echo) {
-	e.GET("users", AuthenticationController.SignIn)
+	e.POST("/sign-in", AuthenticationController.SignIn)
 }
