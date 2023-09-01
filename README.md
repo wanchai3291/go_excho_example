@@ -3,6 +3,10 @@
 
 #### เขียนด้วย concept modular
 
+<img width="742" alt="image" src="https://github.com/wanchai3291/go_excho_example/assets/37076184/5912bc28-e9c6-4123-bab6-d2ced62c91a2">
+
+
+
 ### Files
  - cmd -> main app
  - package(pkg) -> external file ไฟล์ที่ใช้รวมกันจะอยู่ในนี้เช่น random number service
