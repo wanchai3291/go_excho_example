@@ -15,3 +15,4 @@
  - assets -> เก็บไฟล์ static เช่น รูป html
  - scripts -> เก็บไฟล์ deploy เช่น docker ks8 docker-compose
  - test -> ไฟล์ test
+________________________________________________________________
