@@ -1,8 +1,10 @@
 package main
 
 import (
+	"go_echo_example/configs/database/mongodb"
 	"go_echo_example/configs/database/supabase"
 	"go_echo_example/pkg/handler"
+	AuthenticationRoute "go_echo_example/src/authentication/routes"
 	SampleRoute "go_echo_example/src/sample/routes"
 	"os"
 
@@ -19,18 +21,16 @@ func main() {
 	e.Use(middleware.Logger())
 	e.Use(middleware.Recover())
 
-	// mongodb.Connect()
+	mongodb.Connect()
 
-	// Supabese connect
 	supabase.Connect()
 	supa := supabase.DB()
 	supabaseDB, err := supa.DB()
 	if err != nil {
-		panic(e)
+		panic(err)
 	}
 	supabaseDB.Ping()
-
-	// AuthenticationRoute.InitAuthRoutes(e)
+	AuthenticationRoute.InitAuthRoutes(e)
 	SampleRoute.InitSampleRoutes(e)
 	// UserRoutes.InitUserRoutes(e)
 
